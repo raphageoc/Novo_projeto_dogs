@@ -5,25 +5,57 @@
   <!-- <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet"  /> -->
   <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <meta charset=utf-8 />
 </head>
+<style>
+html, body {
+    height: 100%;
+}
+.container-fluid {
+    height: 100%;
+    overflow-y: hidden; /* don't show content that exceeds my height */
+}
+.body-film {
+    min-height: 100%;
+    overflow-y: scroll;
+}
+</style>
 
-<body>
+<body >
+  <div class="container  progress-bar progress-bar-striped progress-bar-animated" style="background:#ccffcc ;height:100%">
+  <div class="row m-2" style="height:30%">
+    <div class="col m-1  bg-primary rounded  ">
+
+    </div>
+    <div class="col m-1 bg-secondary rounded  ">
+      One of three columns
+    </div>
+  </div>
+  <div class="row m-2 " style="height:30%">
+    <div class="col m-1 bg-success rounded  ">
+      One of three columns
+    </div>
+    <div class="col m-1 bg-danger rounded ">
+      One of three columns
+    </div>
+  </div>
+</div>
 
 
-
-  <div>
-    <form>
- <label for="fname">First name:</label><br>
- <input type="text" id="fname" name="fname"><br>
- <label for="lname">Last name:</label><br>
- <input type="text" id="lname" name="lname">
- <input type="file" id="fileImage" accept="image/*" />
+<div>
+  <form>
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname"><br>
+<label for="lname">Last name:</label><br>
+<input type="text" id="lname" name="lname">
+<input type="file" id="fileImage" accept="image/*" />
 </form>
 <img id="imgScaled"></img>
 <input type="submit" onclick='saveIndexedb()' value="Submit" />
 
-  </div>
+</div>
+
 
   <script>
 
